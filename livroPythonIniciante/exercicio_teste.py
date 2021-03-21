@@ -1,4 +1,4 @@
-velocidadeCarro = int(input("informe a velocidade do carro: "))
+velocidadeCarro = int(input("Informe a velocidade do carro: "))
 multa = float(5)
 
 if velocidadeCarro > 80:
