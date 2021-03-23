@@ -1,9 +1,13 @@
-velocidadeCarro = int(input("Informe a velocidade do carro: "))
-multa = float(5)
+salario = float(input("Digite o salário para o calculo do imposto: "))
 
-if velocidadeCarro > 80:
-    exedente = velocidadeCarro - 80
-    valorMulta = exedente * multa
+base = salario
+imposto = 0
 
-    print("Você foi multado!")
-    print("O valor da multa é R$ {:5.2f}". format(valorMulta))
+if base > 3000:
+    imposto = imposto + ((base - 3000) * 0.35)
+    base = 3000
+
+if base > 1000:
+    imposto = imposto + ((base - 1000) * 0.20)
+
+print(f"Salário: R${salario:6.2f} Imposto a pagar: R${imposto:6.2f}")
