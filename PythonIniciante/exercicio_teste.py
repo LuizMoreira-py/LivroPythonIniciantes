@@ -1,8 +1,12 @@
-tabuada = int(input("Tabuada de: "))
-inicio = int(input("Informe o inicio da tabuada: "))
-fim = int(input("Informe o fim da tabuada: "))
+n1 = int(input("Digite um número inteiro: "))
+multi = int(input(f"Digite quantas vezes deseja somar o número {n1} x "))
 
-x = inicio
-while x <= fim:
-    print(tabuada * x)
-    x = x + 1
+n = 1
+soma = 0
+cont = 0
+
+while n <= multi:
+    soma = soma + n1
+    n = n + 1
+    cont += 1
+    print(f"Soma {cont}: {n1} + {soma}")
