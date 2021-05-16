@@ -1,19 +1,15 @@
-# Escreva um programa que leia números inteiros do teclado. O programa deve
-# ler os números até que o usuário digite 0 (zero). No final da execução,
-# exiba a quantidade de números digitados como a soma e a média aritmética.
+# Escreva um programa para controlar uma pequena máquina registradora.
+# Você deve solicitar ao usuário que digite o código do produto e a
+# quantidade comprada. Utilize a tabela de código a seguir para obter
+# o preço de cada produto.
 
-soma = 0
-contador = 0
-media = 0
+# Código ----	Preço
+# 1	            0,50
+# 2	            1,00
+# 3	            4,00
+# 5	            7,00
+# 9	            8,00
 
-while True:
-    numeros = int(input("Digite um número inteiro: "))
-    if numeros == 0:
-        break
-    soma += numeros
-    contador += 1
-media = soma // contador
+# Seu programa deve exibir o total das compras depois que o usuário digitar 0.
+# Qualquer outro código deve gerar a mensagem de erro "Código inválido".
 
-print(f"Total de números digitados: {contador}")
-print(f"Soma dos números digitados: {soma}")
-print(f"Média dos números digitados: {media}")
