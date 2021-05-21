@@ -7,7 +7,8 @@ saida = 1
 
 while saida == 1:
     print("Menu: \n ")
-    print(" 1 - Adição \n 2 - Subtração \n 3 - Divisão \n 4 - Multiplicação \n 5 - Saída \n")
+    print(" 1 - Adição \n 2 - Subtração \n 3 - Divisão \n 4 - Multiplicação")
+    print(" 5 - Saída \n")
 
     operacao = int(input("Escolha uma operação: "))
 
