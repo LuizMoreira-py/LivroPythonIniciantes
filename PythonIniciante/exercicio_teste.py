@@ -4,3 +4,10 @@
 # até o número lido. Se o resto de uma dessas divisões for igual zero,
 # o número não é primo. Observe que 0 e 1 não são primos e que 2 é o único
 # número primo que é par.
+
+
+contagem = 1
+while contagem <= 100:
+    print(contagem)
+    contagem += 1
+    
