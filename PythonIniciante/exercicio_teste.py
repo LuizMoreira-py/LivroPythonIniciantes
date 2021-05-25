@@ -6,5 +6,19 @@
 # número primo que é par.
 
 numero = int(input())
-resto = numero % 3
+resto = numero % 2
 print(resto)
+
+x = 1
+while x <= numero:
+    impar = x
+    if impar % 2 == 1:
+        print(impar)
+    x += 1
+    while True:
+        primo = numero // impar
+        if primo > 0 and primo != 0:
+            print("Primo")
+        else:
+            print("Não primo")
+        break
