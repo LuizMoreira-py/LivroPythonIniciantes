@@ -5,20 +5,23 @@
 # o número não é primo. Observe que 0 e 1 não são primos e que 2 é o único
 # número primo que é par.
 
-numero = int(input())
-resto = numero % 2
-print(resto)
-
-x = 1
-while x <= numero:
-    impar = x
-    if impar % 2 == 1:
-        print(impar)
-    x += 1
-    while True:
-        primo = numero // impar
-        if primo > 0 and primo != 0:
-            print("Primo")
+n = int(input("Digite um número:"))
+if n < 0:
+    print("Número inválido. Digite apenas valores positivos")
+if n == 0 or n == 1:
+    print(f"{n} é um caso especial.")
+else:
+    if n == 2:
+        print("2 é primo")
+    elif n % 2 == 0:
+        print(f"{n} não é primo, pois 2 é o único número par primo.")
+    else:
+        x = 3
+        while(x < n):
+            if n % x == 0:
+                break
+            x = x + 2
+        if x == n:
+            print(f"{n} é primo")
         else:
-            print("Não primo")
-        break
+            print(f"{n} não é primo, pois é divisível por {x}")
