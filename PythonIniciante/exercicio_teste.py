@@ -5,14 +5,5 @@
 # o número não é primo. Observe que 0 e 1 não são primos e que 2 é o único
 # número primo que é par.
 
-fim = int(input("Informe um número para ver se ele é primo: "))
-resto = fim % 2
-
-x = fim
-while True:
-    primo = x % 2 // impar
-    if primo > 0 and primo != 1:
-        print("É primo")
-    else:
-        print("Não é primo")
-    break
+fim = int(input())
+resto = fim // 2 % 
