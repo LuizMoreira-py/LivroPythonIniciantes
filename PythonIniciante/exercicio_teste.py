@@ -9,9 +9,9 @@ x = 0
 numero = int(input())
 resto = numero % 2
 
-whilnumero:
+while numero > x:
     if x % 2 == 1:
-        divisao = x % numero
+        divisao = numero % x
         print(divisao)
     x += 1
 
