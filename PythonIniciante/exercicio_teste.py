@@ -21,6 +21,8 @@ else:
             if n % x == 0:
                 break
             x = x + 2
+            if n % x != 0 and n % x != 1:
+                print(x)
         if x == n:
             print(f"{n} é primo")
         else:
