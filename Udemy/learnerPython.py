@@ -3,4 +3,3 @@ def soma(nome, idade):
 
 
 print(soma("nome", 25))
-
