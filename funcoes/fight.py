@@ -8,9 +8,10 @@ enemyLife = 150
 enemyAttk = 5
 enemyDefence = 4
 
-while True:
-    def attkenemy(life, enemyAttk):
-        return life - (defence - enemyAttk)
-    print("Agora sua vida é")
-    print(attkenemy(life, enemyAttk))
-    break
+
+def attkenemy(life, enemyAttk):
+    return life - (defence - enemyAttk)
+
+
+print("Agora sua vida é")
+print(attkenemy(life, enemyAttk))
