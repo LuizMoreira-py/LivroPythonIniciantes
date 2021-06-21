@@ -1,9 +1,9 @@
-usuario = input("Digite se usuário: ")
-caracteres = len(usuario)
+num1 = int(input("Digite um número: "))
+num2 = int(input("Digite outro número: "))
 
-print(usuario, caracteres, type(caracteres))
 
-if caracteres < 6:
-    print("Você precisa digitar pelo menos 6 caracteres")
-else:
-    print("Você foi cadastrado no sistema")
+def soma(num1, num2):
+    return num1 + num2
+
+
+print(soma(num1, num2))
