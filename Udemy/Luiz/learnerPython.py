@@ -8,3 +8,12 @@ if numero.isdigit():
         print("O número digitado é impar!")
 else:
     print("O valor digitado não é inteiro!")
+
+horas = int(input("Digite somente a hora do seu relógiio: "))
+
+if horas <= 11:
+    print("Bom dia!")
+elif horas >= 12 and horas <= 17:
+    print("Boa tarde!")
+else:
+    print("Boa noite!")
