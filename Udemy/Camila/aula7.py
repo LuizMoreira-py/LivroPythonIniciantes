@@ -5,7 +5,7 @@ e_maior = idade > 18  # bool
 data_1 = True  # bool
 data_atual = 2021
 peso = 70
-imc = (peso / ((altura * altura)))
+imc = (peso / altura ** 2)
 
 
 print(nome, 'tem', idade, 'de idade e seu imc é', imc)
